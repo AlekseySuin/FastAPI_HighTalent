@@ -1,4 +1,4 @@
-## Степень реализации проекта:
+# Степень реализации проекта:
 :white_check_mark: Использовать FastAPI как основной фреймворк.</br>
 :white_check_mark: Работа с БД через SQLAlchemy или SQLModel.</br>
 :white_check_mark: Использовать PostgreSQL.</br>
