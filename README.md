@@ -21,7 +21,7 @@ cd ваш-репозиторий
 
 ## 2. Запуск с помощью Docker
 
-а) Убедитесь, что Docker установлен
+а) Убедитесь, что Docker установлен </br>
 Убедитесь, что у вас установлены Docker и Docker Compose. Если нет, установите их:
 
 [Установка Docker](https://docs.docker.com/get-started/get-docker/)
