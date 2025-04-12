@@ -26,14 +26,6 @@ def create_table(table_data: TableBase, db: Session = Depends(get_db)):
 
 
 @router.delete("/{table_id}")
-def delete_table(table_id: int):
-    table = db.query(Table).filter(Table.id == table_id).first()
-
-    if not table:
-        raise HTTPException(status_code=404, detail="Стол не найден")
-        db.close()
-        return False
-    db.delete(table)
-    db.commit()
-    db.close()
+def delete_table(table_id: int, db: Session = Depends(get_db)):
+    TableService.delete_table(db, table_id)
     return True

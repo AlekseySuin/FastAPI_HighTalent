@@ -31,6 +31,14 @@ class TableService:
                 detail="Стол не найден"
             )
         return table
+
+    @staticmethod
+    def delete_table(db: Session, table_id: int):
+        table = TableService.is_table_exists(db, table_id)
+        db.delete(table)
+        db.commit()
+        return True
+
     @classmethod
     def create_table(cls, db: Session, data: TableBase):
         cls.validate_table_data(db, data)
@@ -44,10 +52,3 @@ class TableService:
         db.commit()
         db.refresh(new_table)
         return new_table
-
-    @staticmethod
-    def delete_table(db:Session, table_id: int):
-        table = TableService.is_table_exists(db, table_id)
-        db.delete(table)
-        db.commit()
-        return True
