@@ -28,7 +28,8 @@ cd ваш-репозиторий
 
 [Установка Docker Compose](https://docs.docker.com/compose/install/)
 
-б) Сборка и запуск контейнеров
+б) Сборка и запуск контейнеров </br>
+**Важно!** Перед запуском не забудьте запустить docker desktop
 ```
 docker-compose up --build
 ```
