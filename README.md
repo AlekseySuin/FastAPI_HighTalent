@@ -14,8 +14,9 @@ REST API сервис для бронирование столиков в рес
 
 # Как запустить проект?
 ## 1. Клонируйте проект
-
-git clone (https://github.com/AlekseySuin/DjangoStripe)
+```
+git clone (https://github.com/AlekseySuin/FastAPI_HighTalent)
+```
 cd ваш-репозиторий
 
 
