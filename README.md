@@ -15,7 +15,7 @@ REST API сервис для бронирование столиков в рес
 # Как запустить проект?
 ## 1. Клонируйте проект
 ```
-git clone (https://github.com/AlekseySuin/FastAPI_HighTalent)
+git clone https://github.com/AlekseySuin/FastAPI_HighTalent.git
 ```
 cd ваш-репозиторий
 
